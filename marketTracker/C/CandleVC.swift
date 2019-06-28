@@ -14,9 +14,9 @@ class CandleVC: UIViewController {
 //    lazy var candleView = CandleView()
     lazy var pinchToClose = UIPinchGestureRecognizer()
 
-    override func viewDidLoad() { super.viewDidLoad() ; print("\n                            🕯L")
-        AppUtility.lockOrientation(.landscapeLeft, andRotateTo: .landscapeLeft)
-    }
+//    override func viewDidLoad() { super.viewDidLoad() ; print("\n                            🕯L")
+//        AppUtility.lockOrientation(.landscapeLeft, andRotateTo: .landscapeLeft)
+//    }
     override func viewDidAppear(_ animated: Bool) {     print("\n                            🕯A")
         addCandleViewWithPinch()
     }

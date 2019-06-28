@@ -65,19 +65,19 @@ extension Double {
 }
 
 
-struct AppUtility {                                            //OK it's not an extension but this seems the best place for it (for now)
-    static func lockOrientation(_ orientation: UIInterfaceOrientationMask) {
-        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
-            appDelegate.orientationLock = orientation
-        }
-        else {
-            print("[AppUtility] error casting app delegate instance")
-        }
-    }
-    
-    // optional Added method to adjust lock and rotate to the desired orientation
-    static func lockOrientation(_ orientation: UIInterfaceOrientationMask, andRotateTo rotateOrientation:UIInterfaceOrientation) {
-        self.lockOrientation(orientation)
-        UIDevice.current.setValue(rotateOrientation.rawValue, forKey: "orientation")
-    }
-}
+//struct AppUtility {                                            //OK it's not an extension but this seems the best place for it (for now)
+//    static func lockOrientation(_ orientation: UIInterfaceOrientationMask) {
+//        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+//            appDelegate.orientationLock = orientation
+//        }
+//        else {
+//            print("[AppUtility] error casting app delegate instance")
+//        }
+//    }
+//    
+//    // optional Added method to adjust lock and rotate to the desired orientation
+//    static func lockOrientation(_ orientation: UIInterfaceOrientationMask, andRotateTo rotateOrientation:UIInterfaceOrientation) {
+//        self.lockOrientation(orientation)
+//        UIDevice.current.setValue(rotateOrientation.rawValue, forKey: "orientation")
+//    }
+//}

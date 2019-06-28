@@ -23,7 +23,7 @@ class TradePanelVC: UICollectionViewController {
 //            AppUtility.lockOrientation(.portrait, andRotateTo: .portrait)
 //        }
 //        else {
-            AppUtility.lockOrientation(.landscapeLeft, andRotateTo: .landscapeLeft)
+            ///AppUtility.lockOrientation(.landscapeLeft, andRotateTo: .landscapeLeft)
 //        }
         collectionView?.register(CustomCell.self, forCellWithReuseIdentifier: CustomCell.reuseIdentifier) //CustomCell.reuseIdentifier
         collectionView?.backgroundColor = .clear

@@ -12,7 +12,7 @@ extension TradePanelVC {
         var barButtonColours = [platinum, UIColor.clear]
         
         for button in navigationItem.rightBarButtonItems! {
-            if let index = navigationItem.rightBarButtonItems?.index(of: button) {
+            if let index = navigationItem.rightBarButtonItems?.firstIndex(of: button) {
                 button.tintColor = barButtonColours[index]
             }
         }
