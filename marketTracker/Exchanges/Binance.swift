@@ -28,7 +28,7 @@ func getBinanceCandles(urlString: String) {                             print("f
             print("Failed to load: \(error.localizedDescription)")
         }
         
-        DispatchQueue.main.async {                                                //print("binding data from quadriga api")
+        DispatchQueue.main.async {  print("binding data from [insert exchange name] api")
             exchangesReloaded[2] = 1
             checkExchangesReloaded()
         }

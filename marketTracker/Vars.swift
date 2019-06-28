@@ -29,16 +29,16 @@ var numSections = 9;                            var numRows = 400
 
 
 
-var krakenOHLCChunks: [KrakenOHLCChunk]?;   //var quadrigaOHLCChunks: [QuadrigaOHLCChunk]?
+var krakenOHLCChunks: [KrakenOHLCChunk]?
 var krakenPair = "XXBTZCAD"
 var binanceCandles: [[AnyObject]]?;         var binanceCandleSub = [[AnyObject]]()
 //var binanceChunks: [BinanceChunk]?
-var latestKrakenBTCBuyPrice = 0.0;          var latestBinanceETHBTCPrice = 0.0;     var latestQuadrigaBTCSellPrice = 0.0
+var latestKrakenBTCBuyPrice = 0.0;          var latestBinanceETHBTCPrice = 0.0
 var diffAbs = 0.0;                          var diffPer = 0.0
 var diffAbsRounded = 0;                     var diffPerRounded = 0.0
 
 var exchangesReloaded = [0, //Kraken
-    0, //[Undecided 2nd exchange; Formerly Quadriga]
+    0, //[Undecided 2nd exchange]
     0] //Binance
 
 

@@ -61,9 +61,6 @@
 		06101DE52216AD54003A4EAC /* Binance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06101DBC2216AD54003A4EAC /* Binance.swift */; };
 		06101DE62216AD54003A4EAC /* Binance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06101DBC2216AD54003A4EAC /* Binance.swift */; };
 		06101DE72216AD54003A4EAC /* Binance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06101DBC2216AD54003A4EAC /* Binance.swift */; };
-		06101DE82216AD54003A4EAC /* Quadriga.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06101DBD2216AD54003A4EAC /* Quadriga.swift */; };
-		06101DE92216AD54003A4EAC /* Quadriga.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06101DBD2216AD54003A4EAC /* Quadriga.swift */; };
-		06101DEA2216AD54003A4EAC /* Quadriga.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06101DBD2216AD54003A4EAC /* Quadriga.swift */; };
 		06101DEB2216AD54003A4EAC /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06101DBF2216AD54003A4EAC /* APIService.swift */; };
 		06101DEC2216AD54003A4EAC /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06101DBF2216AD54003A4EAC /* APIService.swift */; };
 		06101DED2216AD54003A4EAC /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06101DBF2216AD54003A4EAC /* APIService.swift */; };
@@ -118,7 +115,6 @@
 		06101DB92216AD53003A4EAC /* Dates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dates.swift; sourceTree = "<group>"; };
 		06101DBB2216AD54003A4EAC /* Kraken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kraken.swift; sourceTree = "<group>"; };
 		06101DBC2216AD54003A4EAC /* Binance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binance.swift; sourceTree = "<group>"; };
-		06101DBD2216AD54003A4EAC /* Quadriga.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quadriga.swift; sourceTree = "<group>"; };
 		06101DBF2216AD54003A4EAC /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		06101DC02216AD54003A4EAC /* SafeJsonObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafeJsonObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -243,7 +239,6 @@
 			children = (
 				06101DBB2216AD54003A4EAC /* Kraken.swift */,
 				06101DBC2216AD54003A4EAC /* Binance.swift */,
-				06101DBD2216AD54003A4EAC /* Quadriga.swift */,
 			);
 			path = Exchanges;
 			sourceTree = "<group>";
@@ -395,7 +390,6 @@
 				06101DA52216ACD1003A4EAC /* NavBarSetup.swift in Sources */,
 				06101DA22216ACD1003A4EAC /* UIExtensions.swift in Sources */,
 				06101D682216AC72003A4EAC /* AppDelegate.swift in Sources */,
-				06101DE82216AD54003A4EAC /* Quadriga.swift in Sources */,
 				06101DEB2216AD54003A4EAC /* APIService.swift in Sources */,
 				06101DC12216AD54003A4EAC /* CandleVC.swift in Sources */,
 				06101DD32216AD54003A4EAC /* CollectionViewLayout.swift in Sources */,
@@ -436,7 +430,6 @@
 				06101DE62216AD54003A4EAC /* Binance.swift in Sources */,
 				06101DDD2216AD54003A4EAC /* CustomCell.swift in Sources */,
 				06101DDA2216AD54003A4EAC /* Candle(View).swift in Sources */,
-				06101DE92216AD54003A4EAC /* Quadriga.swift in Sources */,
 				06101DEF2216AD54003A4EAC /* SafeJsonObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,7 +456,6 @@
 				06101DE72216AD54003A4EAC /* Binance.swift in Sources */,
 				06101DDE2216AD54003A4EAC /* CustomCell.swift in Sources */,
 				06101DDB2216AD54003A4EAC /* Candle(View).swift in Sources */,
-				06101DEA2216AD54003A4EAC /* Quadriga.swift in Sources */,
 				06101DF02216AD54003A4EAC /* SafeJsonObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
