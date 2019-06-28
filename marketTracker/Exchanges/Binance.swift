@@ -17,7 +17,7 @@ func getBinanceCandles(urlString: String) {                             print("f
             guard let json = try JSONSerialization.jsonObject(with: data, options: []) as? [[AnyObject]] else {
                 print("error binding binance json data (without keys) to array of arrays")
                 return
-            }                                                           //print("ok, the json response is \(json)")
+            }                                                           //; print("ok, the json response is \(json)")
             
             binanceCandles = json                                       //; print("binance http response is:... ") //\(binanceCandles!)
             binanceCandleSub = binanceCandles!
@@ -28,7 +28,7 @@ func getBinanceCandles(urlString: String) {                             print("f
             print("Failed to load: \(error.localizedDescription)")
         }
         
-        DispatchQueue.main.async {  print("binding data from [insert exchange name] api")
+        DispatchQueue.main.async {  //print("binding data from binance api")
             exchangesReloaded[2] = 1
             checkExchangesReloaded()
         }

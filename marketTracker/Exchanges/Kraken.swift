@@ -29,7 +29,8 @@ class TradingPair: SafeJsonObject {
     @objc var last: AnyObject?            // if Date, it crashes... will have to convert to formatted date
 }
 
-func fetchKrakenFeedForUrlString(urlString: String, completion: @escaping ([KrakenOHLCChunk]) -> ()) { print("fetching kraken")
+func fetchKrakenFeedForUrlString(urlString: String, completion: @escaping ([KrakenOHLCChunk]) -> ()) {      print("fetching kraken")
+//    print("kraken url: \(urlString)")
     guard let url = URL(string: urlString) else { print("error binding kraken url")
         return}
     

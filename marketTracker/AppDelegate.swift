@@ -1,6 +1,5 @@
 //  AppDelegate.swift
-//  marketTracker
-//  Created by Garth Snyder on 2019-02-15.      //  Copyright © 2018 Garth Snyder. All rights reserved.
+//  MarketTracker  ∙  Created 2018-11-17 by Garth Snyder a.k.a. gladiusKatana ⚔️
 import UIKit
 
 @UIApplicationMain class AppDelegate: UIResponder, UIApplicationDelegate {

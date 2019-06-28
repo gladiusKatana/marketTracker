@@ -12,8 +12,10 @@ extension TradePanelVC {
     
     @objc func reloadTable() {                                                          // make this not necessary soon
         if !(self.loadedTimetable) {
+            
             //print("              rt\n")
-            print("------------------rt\n")
+            //print("------------------rt\n")
+            
             DispatchQueue.main.asyncAfter(deadline: .now()) { [weak self] in
                 self?.collectionView?.reloadData()
                 self?.collectionView?.performBatchUpdates({ () -> Void in }, completion: nil)

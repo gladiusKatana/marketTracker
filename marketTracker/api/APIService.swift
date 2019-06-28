@@ -5,11 +5,20 @@ import UIKit
 
 extension NSObject {
     @objc func getFeeds() {                                         print("\nGetting feeds")
-        ApiService.sharedInstance.getKrakenFeed { (ohlcChunks) in   // "closure api calls"
+        getBinanceCandles(urlString: "https://www.binance.com/api/v1/klines?symbol=ETHBTC&interval=1h")
+        
+        ApiService.sharedInstance.getKrakenFeed { (ohlcChunks) in       // closure api calls
             krakenOHLCChunks = ohlcChunks
+//            print("...kraken chunks' last timestamp: \(String(describing: krakenOHLCChunks?.last!.result!.last))")
         }
         
-        getBinanceCandles(urlString: "https://www.binance.com/api/v1/klines?symbol=ETHBTC&interval=1h")//-------------------------------------------
+        ApiService.sharedInstance.getShakepayFeed { (ohlcChunks) in
+            shakepayPriceUpdates = ohlcChunks
+            print("\nbtc:cad price from the shakepay api: \(String(describing: shakepayPriceUpdates?.last!.BTC_CAD))\n")
+        }
+        
+        
+        //getShakepayCandle(urlString: "https://api.shakepay.co/rates")
     }
 }
 
@@ -19,6 +28,10 @@ class ApiService: NSObject {
     
     func getKrakenFeed(_ completion: @escaping ([KrakenOHLCChunk]) -> ()) {       // need these wrapper functions fetchFeed(N)...
         fetchKrakenFeedForUrlString(urlString: "\(baseUrl)\(krakenPair)&since=0", completion: completion)//...bc. called as a closure
+    }
+    
+    func getShakepayFeed(_ completion: @escaping ([ShakepayPriceUpdate]) -> ()) {       // need these wrapper functions fetchFeed(N)...
+        fetchShakepayFeedForUrlString(urlString: "https://api.shakepay.co/rates", completion: completion)//...bc. called as a closure
     }
 }
 

@@ -67,6 +67,9 @@
 		06101DEE2216AD54003A4EAC /* SafeJsonObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06101DC02216AD54003A4EAC /* SafeJsonObject.swift */; };
 		06101DEF2216AD54003A4EAC /* SafeJsonObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06101DC02216AD54003A4EAC /* SafeJsonObject.swift */; };
 		06101DF02216AD54003A4EAC /* SafeJsonObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06101DC02216AD54003A4EAC /* SafeJsonObject.swift */; };
+		06350B8222C5AD9F00E21A44 /* Shakepay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06350B8122C5AD9F00E21A44 /* Shakepay.swift */; };
+		06350B8322C5AD9F00E21A44 /* Shakepay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06350B8122C5AD9F00E21A44 /* Shakepay.swift */; };
+		06350B8422C5AD9F00E21A44 /* Shakepay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06350B8122C5AD9F00E21A44 /* Shakepay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +120,7 @@
 		06101DBC2216AD54003A4EAC /* Binance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binance.swift; sourceTree = "<group>"; };
 		06101DBF2216AD54003A4EAC /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		06101DC02216AD54003A4EAC /* SafeJsonObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafeJsonObject.swift; sourceTree = "<group>"; };
+		06350B8122C5AD9F00E21A44 /* Shakepay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shakepay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,10 +176,10 @@
 				06101D9B2216ACD1003A4EAC /* NavBarSetup.swift */,
 				06101D9A2216ACD1003A4EAC /* UIExtensions.swift */,
 				06101DBE2216AD54003A4EAC /* api */,
+				06101DBA2216AD54003A4EAC /* Exchanges */,
 				06101DB72216AD53003A4EAC /* M */,
 				06101DB32216AD53003A4EAC /* V */,
 				06101DAC2216AD53003A4EAC /* C */,
-				06101DBA2216AD54003A4EAC /* Exchanges */,
 				06101D712216AC75003A4EAC /* Assets.xcassets */,
 				06101D732216AC75003A4EAC /* LaunchScreen.storyboard */,
 				06101D762216AC75003A4EAC /* Info.plist */,
@@ -239,6 +243,7 @@
 			children = (
 				06101DBB2216AD54003A4EAC /* Kraken.swift */,
 				06101DBC2216AD54003A4EAC /* Binance.swift */,
+				06350B8122C5AD9F00E21A44 /* Shakepay.swift */,
 			);
 			path = Exchanges;
 			sourceTree = "<group>";
@@ -246,8 +251,8 @@
 		06101DBE2216AD54003A4EAC /* api */ = {
 			isa = PBXGroup;
 			children = (
-				06101DBF2216AD54003A4EAC /* APIService.swift */,
 				06101DC02216AD54003A4EAC /* SafeJsonObject.swift */,
+				06101DBF2216AD54003A4EAC /* APIService.swift */,
 			);
 			path = api;
 			sourceTree = "<group>";
@@ -399,6 +404,7 @@
 				06101DCD2216AD54003A4EAC /* CellLogic.swift in Sources */,
 				06101DD02216AD54003A4EAC /* CandleVC_X.swift in Sources */,
 				06101DC42216AD54003A4EAC /* TradePanelVC.swift in Sources */,
+				06350B8222C5AD9F00E21A44 /* Shakepay.swift in Sources */,
 				06101DCA2216AD54003A4EAC /* ReloadTable.swift in Sources */,
 				06101DC72216AD54003A4EAC /* CollectionView_X.swift in Sources */,
 				06101DD92216AD54003A4EAC /* Candle(View).swift in Sources */,
@@ -431,6 +437,7 @@
 				06101DDD2216AD54003A4EAC /* CustomCell.swift in Sources */,
 				06101DDA2216AD54003A4EAC /* Candle(View).swift in Sources */,
 				06101DEF2216AD54003A4EAC /* SafeJsonObject.swift in Sources */,
+				06350B8322C5AD9F00E21A44 /* Shakepay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +464,7 @@
 				06101DDE2216AD54003A4EAC /* CustomCell.swift in Sources */,
 				06101DDB2216AD54003A4EAC /* Candle(View).swift in Sources */,
 				06101DF02216AD54003A4EAC /* SafeJsonObject.swift in Sources */,
+				06350B8422C5AD9F00E21A44 /* Shakepay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

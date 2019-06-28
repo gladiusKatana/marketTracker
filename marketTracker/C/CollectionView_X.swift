@@ -18,12 +18,12 @@ extension TradePanelVC {
     
     func setupNotificationForStatusBarHeightChange() {
         let center = UNUserNotificationCenter.current()
-        center.removeAllDeliveredNotifications()        // to remove all delivered notifications
-        center.removeAllPendingNotificationRequests()   // to remove all pending notifications not delivered yet but scheduled.
+        center.removeAllDeliveredNotifications()            // to remove all delivered notifications
+        center.removeAllPendingNotificationRequests()       // to remove all pending notifications not delivered yet but scheduled.
         NotificationCenter.default.addObserver(self, selector: #selector(statusBarHeightChanged), name: UIApplication.willChangeStatusBarFrameNotification, object: nil)
     }
     
-    @objc func statusBarHeightChanged() { print("\nstatus bar height changed\n")
+    @objc func statusBarHeightChanged() {                   //print("\nstatus bar height changed\n")
         if dataSourceDidUpdate {dataSourceDidUpdate = false}
         unlockAndReloadTable()
     }
