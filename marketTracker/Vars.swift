@@ -1,13 +1,11 @@
 //  Vars.swift
-//  CandleTap
-//  Created by Garth Snyder on 2018-11-17.      //  Copyright © 2018 Garth Snyder. All rights reserved.
+//  MarketTracker  ∙  Created 2018-11-17 by Garth Snyder a.k.a. gladiusKatana ⚔️
 import UIKit
 
 var globalKeyWindow = UIApplication.shared.keyWindow;                   //var apDel = UIApplication.shared.delegate as? AppDelegate
 var vcLoaded = "view controller id"                                     //var previousVC = UICollectionViewController() // only used for navigation
 var navController: UINavigationController? = UINavigationController()
 var statusBar = UIView()
-
 
 
 
@@ -18,14 +16,12 @@ var orientationAdjustment = 0.0;                var additionalVerticalOffset = 0
 
 
 
-
 var tradePanelLayout = CollectionViewLayout()
 var tradePanelVC = TradePanelVC(collectionViewLayout: tradePanelLayout)
 ///var tradePanelVC = CollectionViewController(tableActive: true, timerSymbol: nil, collectionViewLayout: collectionViewLayout)
 var candleVC = CandleVC()
 var cellWidth = CGFloat();                      var cellHeight = CGFloat()
 var numSections = 9;                            var numRows = 400
-
 
 
 
@@ -42,7 +38,6 @@ var exchangesReloaded = [0, //Kraken
     0] //Binance
 
 
-
 var (tm, weekday, dy) = ("", "", "")
 
 var firstLoaded = false;            var dataSourceDidUpdate = false
@@ -50,7 +45,6 @@ var scrollable = true;              var menuBarOn = false
 var justPinchedFromCandleView = false
 var showCandleViewAutomatically = true
 var candleViewShowing = false
-
 
 
 var backingColour = UIColor.rgb(150, green: 180, blue: 220, alpha: 1)
