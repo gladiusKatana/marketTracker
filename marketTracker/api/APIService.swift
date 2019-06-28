@@ -9,9 +9,9 @@ extension NSObject {
             krakenOHLCChunks = ohlcChunks
         }
         
-        ApiService.sharedInstance.getQuadrigaFeed { (ohlcChunks) in
-            quadrigaOHLCChunks = ohlcChunks
-        }
+//        ApiService.sharedInstance.getQuadrigaFeed { (ohlcChunks) in
+//            quadrigaOHLCChunks = ohlcChunks
+//        }
         
         getBinanceCandles(urlString: "https://www.binance.com/api/v1/klines?symbol=ETHBTC&interval=1h")//-------------------------------------------
     }
@@ -25,9 +25,9 @@ class ApiService: NSObject {
         fetchKrakenFeedForUrlString(urlString: "\(baseUrl)\(krakenPair)&since=0", completion: completion)//...bc. called as a closure
     }
     
-    func getQuadrigaFeed(_ completion: @escaping ([QuadrigaOHLCChunk]) -> ()) {
-        fetchQuadrigaFeedForUrlString(urlString: "https://api.quadrigacx.com/v2/ticker?book=btc_cad", completion: completion)
-    }
+//    func getQuadrigaFeed(_ completion: @escaping ([QuadrigaOHLCChunk]) -> ()) {
+//        fetchQuadrigaFeedForUrlString(urlString: "https://api.quadrigacx.com/v2/ticker?book=btc_cad", completion: completion)
+//    }
 }
 
 func checkExchangesReloaded() {

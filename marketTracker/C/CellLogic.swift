@@ -30,19 +30,19 @@ extension TradePanelVC {
                 } else {print("did not bind BTCCAD price from binance (in cell)")}
             }
             //                            !!!
-            if column == 1 && row == 5 {//!!!QUADRIGA!!! -- IF YOU'RE NOT ALREADY AWARE OF THE CURRENT SITUATION WITH THE QUADRIGACX EXCHANGE...
-                if let btcCadCurrent = quadrigaOHLCChunks?[0].bid {//...WELL, GOOGLE IT! THIS PROGRAM SHOWS THAT QUADRIGACX'S BACKEND (API) IS NOT...
-                    cell.titleLabel.text = "\(btcCadCurrent)"//...CURRENTLY OPERATIONAL-- JUST LIKE THEIR WEBSITE FRONT-END ISN'T. SMELLS LIKE FRAUD...
-                    //                                       //...OR AT THE VERY LEAST, GROSS NEGLIGENCE. (WILL COPY THIS WARNING IN OTHER FILES SOON.)
-                    latestQuadrigaBTCSellPrice = Double("\(btcCadCurrent)0")!//; print("last q. btc sellprice: \(latestQuadrigaBTCSellPrice)")
-                    diffAbs = (latestQuadrigaBTCSellPrice - latestKrakenBTCBuyPrice)
-                    diffAbsRounded = Int(diffAbs.rounded(toPlaces: 6))                 // weird: rounds to 2 decimal places no matter what
-                    diffPer = (latestQuadrigaBTCSellPrice / latestKrakenBTCBuyPrice - 1) * 100
-                    diffPerRounded = diffPer.rounded(toPlaces: 2)
-                    print("\n                      +\(diffAbsRounded) CAD  \(diffPerRounded)%\n")
-                    
-                } else {print("did not bind BTCCAD price from quadriga (in cell)")}
-            }
+//            if column == 1 && row == 5 {//!!!QUADRIGA!!! -- IF YOU'RE NOT ALREADY AWARE OF THE CURRENT SITUATION WITH THE QUADRIGACX EXCHANGE...
+//                if let btcCadCurrent = quadrigaOHLCChunks?[0].bid {//...WELL, GOOGLE IT! THIS PROGRAM SHOWS THAT QUADRIGACX'S BACKEND (API) IS NOT...
+//                    cell.titleLabel.text = "\(btcCadCurrent)"//...CURRENTLY OPERATIONAL-- JUST LIKE THEIR WEBSITE FRONT-END ISN'T. SMELLS LIKE FRAUD...
+//                    //                                       //...OR AT THE VERY LEAST, GROSS NEGLIGENCE. (WILL COPY THIS WARNING IN OTHER FILES SOON.)
+//                    latestQuadrigaBTCSellPrice = Double("\(btcCadCurrent)0")!//; print("last q. btc sellprice: \(latestQuadrigaBTCSellPrice)")
+//                    diffAbs = (latestQuadrigaBTCSellPrice - latestKrakenBTCBuyPrice)
+//                    diffAbsRounded = Int(diffAbs.rounded(toPlaces: 6))                 // weird: rounds to 2 decimal places no matter what
+//                    diffPer = (latestQuadrigaBTCSellPrice / latestKrakenBTCBuyPrice - 1) * 100
+//                    diffPerRounded = diffPer.rounded(toPlaces: 2)
+//                    print("\n                      +\(diffAbsRounded) CAD  \(diffPerRounded)%\n")
+//
+//                } else {print("did not bind BTCCAD price from quadriga (in cell)")}
+//            }
             
             //------------------------------------------------labels
             if column == 1 && row == 2 {
@@ -82,15 +82,15 @@ extension TradePanelVC {
                 } else {print("did not bind BTCCAD price from binance (in cell)")}
             }
             
-            if column == 3 && row == 5 {
-                if let stamp = quadrigaOHLCChunks?[0].timestamp {
-                    let interval = Double("\(stamp)")                           //print("stamp 'as' double is \(interval!)")
-                    let date = NSDate(timeIntervalSince1970: interval!)
-                    (tm, weekday, dy) = displayDate(dateCreated: date as Date)  //; print("last kraken date is \(tm, weekday, dy)")
-                    cell.titleLabel.text = "\(tm) \(dy)"
-
-                } else {print("did not bind BTCCAD price from quadriga DATE (in cell)")}
-            }
+//            if column == 3 && row == 5 {
+//                if let stamp = quadrigaOHLCChunks?[0].timestamp {
+//                    let interval = Double("\(stamp)")                           //print("stamp 'as' double is \(interval!)")
+//                    let date = NSDate(timeIntervalSince1970: interval!)
+//                    (tm, weekday, dy) = displayDate(dateCreated: date as Date)  //; print("last kraken date is \(tm, weekday, dy)")
+//                    cell.titleLabel.text = "\(tm) \(dy)"
+//
+//                } else {print("did not bind BTCCAD price from quadriga DATE (in cell)")}
+//            }
             //------------------------------------------------pricelabels etc
             if column == 5 {
                 if row == 3 {
